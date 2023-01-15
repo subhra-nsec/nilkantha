@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilkantha Multitrade</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+
+      <!-- Additional CSS Files -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> 
+      <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Header -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+    :root {
+      --pink: rgb(1, 1, 58);
+      --violet: rgb(1, 1, 58);
+    }
+
+
+    *::selection {
+      background: var(--pink);
+      color: #fff;
+    }
+
+    html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+    }
+
+    .heading {
+      font-size: 3rem;
+      color: var(--pink);
+      text-align: center;
+      padding: 0 1rem;
+      padding-top: 2rem;
+      letter-spacing: .2rem;
+      font-weight: 500;
+    }
+
+    .title {
+      padding: 0 1rem;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 400;
+      color: #aaa;
+    }
+
+
+    .home {
+      min-height: 50vh;
+      background:url("assets/img/banner1.jpg") ;
+      /* linear-gradient(rgba(198, 59, 250,.8),rgba(198, 59, 250,.8)),  */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      z-index: 0;
+      /* background-color: rgb(1, 1, 58, 0.5); */
+      
+      overflow: hidden;
+      position: relative;
+    }
+
+    .home .content {
+      display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-top: 14rem;
+  padding-bottom: 8rem;
+  text-align: center;
+    }
+
+    .home .content h1 {
+      font-size: 2rem;
+      color: #fff;
+      padding: 0 1rem;
+      text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+      text-transform: uppercase;
+      padding: 20px;
+      
+    }
+
+
+    .about .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about .row .image img {
+      height: 45vh;
+      width: 35vw;
+    }
+
+    .about .row .content {
+      padding-left: 5rem;
+    }
+
+    .about .row .content h3 {
+      font-size: 3rem;
+      color: var(--pink);
+    }
+
+    .about .row .content p {
+      font-size: 1.6rem;
+      color: #999;
+      padding: 1rem 0;
+    }
+
+    .about .row .content button {
+      height: 3.5rem;
+      width: 17rem;
+      background: var(--violet);
+      color: #fff;
+      border: none;
+      border-radius: 5rem;
+      box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+      cursor: pointer;
+      font-size: 2rem;
+      transition: .2s;
+    }
+
+    .about .row .content button:hover {
+      letter-spacing: .2rem;
+      opacity: .8;
+    }
+    .review {
+      background: #f9f9f9;
+    }
+
+    .review .box-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .review .box-container .box {
+      width: 88rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+      background: #fff;
+      margin: 4rem 2rem;
+  
+    }
+
+    .review .box-container .box img {
+      height: 8.5rem;
+      width: 8.5rem;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: -4rem;
+      border: .6rem solid var(--pink);
+      border-left: .6rem solid var(--violet);
+      border-bottom: .6rem solid var(--violet);
+    }
+
+    .review .box-container .box h3 {
+      font-size: 2rem;
+      color: var(--pink);
+      padding: 0 .5rem;
+    }
+
+    .review .box-container .box p {
+      font-size: 1.4rem;
+      color: #999;
+      padding: 0 1.3rem;
+    }
+
+    .review .box-container .box .stars i {
+      font-size: 1.6rem;
+      color: var(--violet);
+      padding: 1.3rem .1rem;
+    }
+
+    .contact {
+      background: rgb(1, 1, 63);
+    }
+
+    .contact .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 0;
+    }
+
+    .contact .row .image img {
+      width: 50vw;
+      height: 70vh;
+    }
+
+    .contact .row .form-container {
+      width: 50%;
+      padding-right: 6rem;
+    }
+
+    .contact .row .form-container input,
+    textarea {
+      height: 4rem;
+      width: 100%;
+      background: #fff;
+      border: none;
+      border-radius: 2rem;
+      padding: 0 1rem;
+      margin: 1rem 0;
+      color: var(--pink);
+      font-size: 1.7rem;
+      transition: .2s linear;
+    }
+
+    .contact .row .form-container input:focus,
+    textarea:focus {
+      border: .2rem solid var(--pink);
+    }
+
+    .contact .row .form-container textarea {
+      height: 20rem;
+      border-radius: 1rem;
+      padding: 1rem;
+      resize: none;
+    }
+
+    .contact .row .form-container input[type="submit"] {
+      width: 17rem;
+      background: #fbfbfb;
+      color: rgb(1 1 58);
+      cursor: pointer;
+      font-size: 2rem;
+      transition: .2s;
+    }
+
+    .contact .row .form-container input[type="submit"]:hover {
+      background: none;
+      color: var(--pink);
+      border: .2rem solid var(--pink);
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    .footer .icons {
+      padding: 3rem 0;
+    }
+
+    .footer .icons a {
+      height: 4.5rem;
+      width: 4.5rem;
+      line-height: 4.2rem;
+      text-align: center;
+      border-radius: 50%;
+      color: var(--violet);
+      border: .2rem solid var(--violet);
+      font-size: 2rem;
+      margin: 0 .1rem;
+      transition: .2s linear;
+    }
+
+    .footer .icons a:hover {
+      color: #fff;
+      background: var(--pink);
+      border-color: var(--pink);
+    }
+
+
+    .footer .credit {
+      font-size: 2rem;
+      border-top: .1rem solid #999;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      color: #666;
+      width: 90%;
+      padding: 1rem 0;
+    }
+    
+    .footer .credit span {
+      color: var(--pink);
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+        color: #eee;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      .home::before {
+        display: none;
+      }
+
+
+
+      .about .row {
+        flex-flow: column-reverse;
+      }
+
+      .about .row .image img {
+        height: 60vh;
+        width: 90vw;
+
+      }
+
+      .about .row .content {
+        padding: 0 2.5rem;
+      }
+
+      .course .box-container {
+        width: 100%;
+      }
+
+      .contact .row {
+        flex-flow: column;
+        padding-block: 10px;
+      }
+
+      .contact .row .image{
+        height: 50vh;
+        width: 50vw;
+        padding: 10px;
+        padding-right: 20px;
+      }
+      .map-width{
+        color: rgb(170, 170, 241);
+      }
+
+      .contact .row .form-container {
+        width: 90%;
+        padding: 10px;
+        padding-left: 10px;
+      }
+      iframe{
+        width: 100%;
+        height: 50%rem;
+      }
+      .contact .form-container form{
+        width: 70%;
+      }
+    
+
+    /* #particles-js {
+      height: 80vh;
+    } */
+
+    /* Sectors starts */
+
+    .home .box-container .box {
+      transition: 400ms;
+    }
+
+    .home .box-container .box:hover {
+      filter: opacity(1);
+      transform: scale(1.5);
+    }
+
+    /* sectors ends*/
+
+    /* jobs */
+    .review .box-container .box{
+      /* height: 150px; */
+      width: 100px;
+      border-radius: 15px;
+      justify-content: center;
+    }
+
+    events starts 
+    .events{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(1,1,58);
+}
+.slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 300px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -50%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -100%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+/* #img5:checked ~ .m5 {
+    margin-left: -400%;
+}
+#img6:checked ~ .m6 {
+    margin-left: -250%;
+} */
+
+#events-btn{
+  padding-bottom: 20px;
+}
+    /* events ends */
+
+
+
+
+        /* Sectors starts */
+
+    /* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 30px;
+  /* background-color: rgb(1, 1, 58); */
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0 1vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 380px;
+  height: 200px;
+  margin-left: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 370px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: rgb(1, 1, 58);
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 5vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%); */
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+/* sector ends */
+    
+ /*applybtn  */
+  #applybtn{
+  /* padding: 30px; */
+            align-content: center;
+            /* padding-left: 30px; */
+  }
+  #applybtn .box{
+  text-align: center;
+      font-size: 30px;
+      height: 5vh;
+      width: 55%;
+      border-radius: 30px;
+      background-color: rgb(1, 1, 58);
+      color: #fff;
+}
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: rgb(255, 255, 255);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: rgb(1, 1, 58);
+    margin: 0em;
+    padding: 5px 10px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+button1 {
+    appearance: auto;
+    text-rendering: auto;
+    font-size: 120%;
+    color: rgb(255, 255, 255);
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: rgb(1, 1, 58);
+    margin: 35px ;
+    padding: 5px 11px;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+}
+
+
+  .review .box-container .box a{
+    color: #fff;
+  }
+  .slideshow-container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(1,1,58);
+	
+}
+.slideshow {
+	width: 90%;
+  height: 310px;
+	position: relative;
+	text-align: center;
+	line-height: 400px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	transition: all 0.5s ease;
+}
+/* slideshow item */
+.slideshow--item {
+	width: 100%;
+  height: 95%;
+	line-height: 1.5;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.slideshow--item img {
+	width: 100%;
+	height: auto;
+	
+}
+.slideshow--bullet:checked + .slideshow--item {
+	visibility: visible;
+}
+.slideshow[data-transition="fade"] .slideshow--item {
+	visibility: visible;
+	opacity: 0;
+	transition: .3s ease-out opacity;
+}
+.slideshow[data-transition="fade"] .slideshow--bullet:checked + .slideshow--item {
+	opacity: 1;
+}
+/* slideshow navigation */
+.slideshow--nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	display: none;
+	z-index: 88;
+	cursor: pointer;
+	color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.slideshow--nav:after {
+	display: block;
+	content: '\25B6';
+	font-size: 1.2em;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	height: 50px;
+	top: 50%;
+	right: -35px;
+  padding-right:40px;
+	padding-top: 25px;
+	padding-left: 10px;
+	border-radius: 50%;
+	margin-top: -1.5em;
+	transition: all 0.5s ease;
+}
+.slideshow--nav:hover:after {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow--nav-previous {
+	left: -45px;
+	display: block;
+}
+.slideshow--nav-previous:after {
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	transform: scaleX(-1);
+	right: auto;
+	left: 10px;
+}
+.slideshow--nav-next {
+	left: 50%;
+	display: block;
+}
+/* Radiobuttons to control the slideshow */
+.slideshow--bullet {
+	font-size: .75em;
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	position: relative;
+	margin: 8px 8px -120px;
+	z-index: 99;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #8d8d8d;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}
+.slideshow--bullet:checked {
+	background: #333;
+	outline: none;
+}
+.button-container {
+	padding: 20px;
+}
+.folio-button {
+	margin: 0 auto;
+	padding: 5px 10px;
+	background-color: #91B0A5;
+	border-radius: 4px;
+	color: #333;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	transition: all 0.3s ease;
+}
+.folio-button:hover {
+	background-color: #B0D6C9;
+}
+@media only screen and (max-width: 980px) {
+	.slideshow {
+		width: 100%;
+  	height: 80%;
+}
+	.slideshow--bullet {
+		margin: 8px 8px -110px;
+}
+	.button-container {
+		margin-top: 80px;
+	}
+}
+@media only screen and (max-width: 402px) {
+	.slideshow {
+		width: 100%;
+  height: 90%;
+}
+	.slideshow--bullet {
+		margin: 8px 8px -100px;
+}
+		.button-container {
+		margin-top: 120px;
+	}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: auto;
+}
+
+.container1 {
+  background-color: rgb(0,0,58);
+  width: 100%;
+  /* padding: auto; */
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: inherit;
+  width: 50%;
+  margin-top: 6px;
+  padding: 25px 60px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+label{
+      font-size: 15px;
+      color: rgb(194, 194, 194);
+      padding: 0 1rem;
+      text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+      text-transform: uppercase;
+      padding: 20px;
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+  <!-- header section starts  -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo"><span style="font-size: 120%">Nilkantha Multitrade Pvt. Ltd.</span></a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                        <li class="submenu">
+                          <a href="javascript:;">Sectors</a>
+                          <ul>
+                              <li><a href="sector_grocery.html">Groceries</a></li>
+                          </ul>
+                      </li>
+                        <li class="scroll-to-section"><a href="aboutus.html">About Us</a></li>
+                        <li class="scroll-to-section"><a href="events.html">Events</a></li>
+                        <li class="submenu">
+                            <a href="javascript:;">Others</a>
+                            <ul>
+                                <li><a href="job.html">Jobs</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="legal_terms.html">Legal Terms</a></li>
+                            </ul>
+                        </li>
+                    </ul>        
+                    <a class="menu-trigger">
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- header section ends -->
+
+
+  <!-- home section starts  -->
+
+  <section class="home" id="home">
+
+    <div class="content">
+      <h1><br><br>Enhancing The Future Of Human Hospitality</h1>
+      <p>We Are Aiming Towards The Augmentation In The Management Of Human Essentials. Emanated On 5th SEP 2022, Our Company Focuses On The Prestigious Residential And Commercial Complexes Which Span Across West Bengal. Offering To Cover A Seamless Mix Of Comfort, From Fresh Groceries To Friendly Hotel Stays Along With Your Tasty Desires.</p>
+      <a href="aboutus.html"><button1>learn more</button1></a>
+    </div>
+
+  </section>
+
+  <!-- home section ends -->
+
+
+  <!-- sector starts -->
+
+  <section class="about" id="about">
+
+    <h1 class="heading">Sectors</h1>
+    <!-- <h3 class="title">start your journey with us</h3> -->
+
+  </section>
+
+<section class="product">
+  <button class="pre-btn"><img src="assets/img/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="assets/img/arrow.png" alt=""></button>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag">Grocery</span> -->
+                <img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="product-thumb" alt="">
+                <button class="card-btn">Nilkantha Grocery</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <!-- <span class="discount-tag"></span> -->
+                <img src="https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?ca=6&ce=1&s=1024x768" class="product-thumb" alt="">
+                <button class="card-btn">Nilkantha Hotels</button>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <!-- <span class="discount-tag"></span> -->
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1447&q=80" class="product-thumb" alt="">
+              <button class="card-btn">Nilkantha Resturants</button>
+          </div>
+      </div>
+        <div class="product-card">
+          <div class="product-image">
+            <!-- <span class="discount-tag"></span> -->
+            <img src="https://images.unsplash.com/photo-1526092817387-8f07b2904e48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="product-thumb" alt="">
+            <button class="card-btn">Nilkantha Banquet Hall</button>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+  <!-- sector ends -->
+
+  <!-- events -->
+  <section id="events" class="review">
+
+    <h1 class="heading" id="events-btn">Events</h1>
+    
+  </section>
+
+  <!-- SLider section starts  -->
+  <section class="events">
+
+  </section>
+  <div class="slideshow-container">
+    <div class="slideshow" data-transition="fade">
+        <input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked" />
+        <div class="slideshow--item">
+          <img src="assets/img/e1.jpg" />
+          <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">.</label>
+          <label for="ss2-item-2" class="slideshow--nav slideshow--nav-next">.</label>
+        </div>
+      
+        <input type="radio" name="ss2" id="ss2-item-2" class="slideshow--bullet" />
+        <div class="slideshow--item">
+          <img src="assets/img/e2.jpg" />
+          <label for="ss2-item-1" class="slideshow--nav slideshow--nav-previous">.</label>
+          <label for="ss2-item-3" class="slideshow--nav slideshow--nav-next">.</label>
+        </div>
+      
+        <input type="radio" name="ss2" id="ss2-item-3" class="slideshow--bullet" />
+        <div class="slideshow--item">
+          <img src="assets/img/e3.jpg" />
+          <label for="ss2-item-2" class="slideshow--nav slideshow--nav-previous">.</label>
+          <label for="ss2-item-4" class="slideshow--nav slideshow--nav-next">.</label>
+        </div>
+        
+        <input type="radio" name="ss2" id="ss2-item-4" class="slideshow--bullet" />
+        <div class="slideshow--item">
+          <img src="assets/img/e4.jpg" />
+          <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">.</label>
+          <label for="ss2-item-1" class="slideshow--nav slideshow--nav-next">.</label>
+        </div>
+    
+      </div>
+    </div>
+    
+    
+    
+  <!-- SLider section ends  -->
+
+  
+
+  <!-- Job section starts  -->
+
+  <section id="jobs" class="review">
+
+    <h1 class="heading" id="jobs-btn">Available Jobs</h1>
+    <div class="box-container" id="applybtn">
+        <div class="box" >
+          <a href="job.html"><b>Apply</b></a>
+        </div>  
+    </div>
+  </section>
+
+  <!-- Job section ends -->
+
+  <!-- contact section starts  -->
+  <div class="container1">
+    <h1 class="heading"><span style="color:rgb(255, 255, 255)">Contact Us</span></h1>
+    <h3 class="title">we love conversations, lets talk.</h3>
+    <div class="row">
+      <div class="column">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29518.65543419922!2d88.41934128626387!3d22.359974147794823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a026c56df83804f%3A0x3fd17431acfd7367!2sMadarat%20Popular%20Academy%20(Estd-1909)!5e0!3m2!1sen!2sin!4v1673640515029!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" placeholder="Your name..">
+          <label for="text">Email</label>
+          <input type="text" id="email" name="Email" placeholder="example@xyz.com">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height: 100px;"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+ <!-- footer ends -->
+
+  <!-- contact section ends -->
+
+  <section class="footer">
+
+    <div class="icons">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      
+    </div>
+
+    <div class="credit">
+      Nilkantha Multitrade Pvt. Ltd.<br><br>
+      +91 7439873138 | +91 8910401908<br>
+      Master Para, Shivtala, Baruipur, 24 Pgs (S), WB, 700144<br></span>
+
+    </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+
+  <!-- jquery cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  
+
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+  </script>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+
+  <script src="script.js"></script>
+    <script>
+        const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+    </script>
+
+</body>
+
+</html>
